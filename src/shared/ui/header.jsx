@@ -1,14 +1,15 @@
 import React from "react";
 import { Button } from "@/shared/ui/button";
-
 import { Link } from "react-router";
+
+import logo from "@shared/images/header-images/logo.png"
 
 const Header = () => {
   return (
     <nav className="px-[10%] py-11 flex items-center justify-between">
       <div className="flex items-center gap-15">
         <Link to={"/"}>
-          <h1>LOGO</h1>
+          <img src={logo} alt="" />
         </Link>
         <ul className="flex gap-12 uppercase text-[#606060]">
           <li>
