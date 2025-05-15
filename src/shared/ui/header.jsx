@@ -28,7 +28,6 @@ const Header = () => {
       <div className="flex items-center gap-8">
         <input className="bg-[#EDEDED] px-5 py-4 rounded-[15px] placeholder-text-[#C2C3CB] placeholder-font-medium" type="text" placeholder="Search Art Work / Creator" />
         <Button className="px-6 h-[57px] uppercase text-white font-semibold">Connect Wallet</Button>
-
       </div>
     </nav>
   );
