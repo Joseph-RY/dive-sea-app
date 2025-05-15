@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "@/shared/ui/button";
 import { Link } from "react-router";
 
-import logo from "@shared/images/header-images/logo.png"
+import logo from "@shared/images/header-images/logo.png";
 
 const Header = () => {
   return (
