@@ -169,13 +169,13 @@ const User = () => {
               </button>
             )}
           </div>
-          <div className="flex flex-wrap md:flex-row flex-col items-center md:items-start gap-10 my-10">
+          <div className="flex flex-wrap md:flex-row flex-col items-center md:items-start md:justify-between my-10">
             {forDiv &&
               data.map((e) => {
                 return (
                   <div
                     key={e.id}
-                    className="md:w-[30%] w-[90%] bg-white md:h-[380px] rounded-2xl shadow-2xl"
+                    className="md:w-[30%] w-[90%] bg-white md:h-[380px] rounded-2xl shadow-2xl mb-10"
                   >
                     <img
                       className="w-[85%] rounded-2xl m-auto my-5"
