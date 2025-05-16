@@ -1,0 +1,31 @@
+.card {
+  /* Rectangle 83 */
+
+  box-sizing: border-box;
+
+  width: 250.02px;
+  height: 380.56px;
+
+  /* Others / White */
+  background: #ffffff;
+  box-shadow: 38.9404px 11.8001px 59.0006px rgba(199, 199, 199, 0.6);
+  border-radius: 23.5543px;
+  padding: 10px;
+}
+.sectioo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.seri{
+    color: gray;
+    font-size:large   
+}
+.btnsiyax{
+    width: 150px; 
+    height: 40px;
+    border-radius: 15px;
+    color: white;
+    background-color: black;
+    border: 0cap;
+}
