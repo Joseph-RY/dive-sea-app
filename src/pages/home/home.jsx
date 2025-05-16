@@ -1,13 +1,13 @@
 import React from "react";
-import heroHeader from "./images/Hero Header.png";
+import heroHeader from "../../shared/images/home-images/Hero Header.png";
 import { Button } from "@shared/ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import image1 from "./images/image1.png";
-import image2 from "./images/image2.png";
-import image3 from "./images/image3.png";
-import image4 from "./images/image4.png";
-import image5 from "./images/image5.png";
+import image1 from "../../shared/images/home-images/image1.png";
+import image2 from "../../shared/images/home-images/image2.png";
+import image3 from "../../shared/images/home-images/image3.png";
+import image4 from "../../shared/images/home-images/image4.png";
+import image5 from "../../shared/images/home-images/image5.png";
 import "swiper/css";
 
 const Home = () => {
@@ -62,7 +62,8 @@ const Home = () => {
           <img src={heroHeader} alt="Hero Header" />
         </section>
 
-        <section>
+        <section className="max-w-[1440px] m-auto bg-[#F1F1F1] py-[60px]">
+          <h3 className="text-[#C5C5C5] text-[45px] font-semibold text-center">Weekly - Top NFT</h3>
           <article className="px-4 py-8 max-w-screen-xl mx-auto">
             <Swiper
               modules={[Autoplay]}
@@ -196,7 +197,9 @@ const Home = () => {
                   </article>
                   <article className="p-3">
                     <h3 className="text-base font-semibold">NuEvey</h3>
-                    <article className="text-sm text-gray-500">Current bid</article>
+                    <article className="text-sm text-gray-500">
+                      Current bid
+                    </article>
                     <article className="flex justify-between items-center mt-1">
                       <span className="font-medium">1.25</span>
                       <Button className="px-6 h-[47px] uppercase text-white font-semibold">
@@ -208,6 +211,10 @@ const Home = () => {
               </SwiperSlide>
             </Swiper>
           </article>
+        </section>
+
+        <section className="max-w-[1200px] m-auto">
+          <h3 className="text-[#141416] text-[45px] font-semibold text-center mt-[120px] mb-[90px]">Top Collection</h3>
         </section>
       </main>
     </>
