@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import heroHeader from "../../shared/images/home-images/Hero Header.png";
 import { Button } from "@shared/ui/button";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,8 +9,27 @@ import image3 from "../../shared/images/home-images/image3.png";
 import image4 from "../../shared/images/home-images/image4.png";
 import image5 from "../../shared/images/home-images/image5.png";
 import "swiper/css";
+import img1 from "../../shared/images/home-images/Mask Group (5).png";
+import img2 from "../../shared/images/home-images/Mask Group (6).png";
+import img3 from "../../shared/images/home-images/image (74).png";
+import img4 from "../../shared/images/home-images/Rectangle 3.png";
+import img5 from "../../shared/images/home-images/Vector (5).png";
+import img6 from "../../shared/images/home-images/Voice Id.png";
+import img7 from "../../shared/images/home-images/Dollar.png";
+import img8 from "../../shared/images/home-images/Illustration Left.png";
+import img9 from "../../shared/images/home-images/icon (1).svg";
+import img10 from "../../shared/images/home-images/Join Community.png";
+import img11 from "../../shared/images/home-images/Group 427320345.png";
+import Card from "@shared/ui/components/card";
 
 const Home = () => {
+  const [modal, setModal] = useState(false);
+  function modalFun() {
+    setModal(true);
+  }
+  function closeModal() {
+    setModal(false)
+  }
   return (
     <>
       <main>
@@ -217,6 +236,145 @@ const Home = () => {
           <h3 className="text-[#141416] text-[45px] font-semibold text-center mt-[120px] mb-[90px]">Top Collection</h3>
         </section>
       </main>
+      <div className="">
+        <div className="flex flex-col max-w-[1200px] mx-auto gap-[63px] justify-center items-center md:mt-[150px] mt-[100px]">
+          <h1 className="md:text-[45px] text-[30px] font-bold">
+            Explore Marketplace
+          </h1>
+          <div className="flex gap-[10px] md:gap-[33px]">
+            <button className="bg-white border-2 border-black w-[50px] h-[40px] rounded-2xl">
+              All
+            </button>
+            <div className=" flex gap-[10px] border-[2px] border-[#141416] items-center p-[9px_18px] rounded-[15px]">
+              <img src={img5} alt="" />
+              <p>Category</p>
+            </div>
+            <div className=" flex gap-[10px] border-[2px] border-[#141416] items-center p-[9px_18px] rounded-[15px]">
+              <img src={img6} alt="" />
+              <p>Collection</p>
+            </div>
+            <div className=" flex gap-[10px] border-[2px] border-[#141416] items-center p-[9px_18px] rounded-[15px]">
+              <img src={img7} alt="" />
+              <p>Price</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="flex flex-wrap justify-around gap-10">
+        <Card img={img1} name={"Sun-Glass"} />
+        <Card img={img2} name={"Sun-Glass"} />
+        <Card img={img3} name={"Sun-Glass"} />
+        <Card img={img4} name={"Sun-Glass"} />
+        <Card img={img3} name={"Sun-Glass"} />
+        <Card img={img4} name={"Sun-Glass"} />
+        <Card img={img1} name={"Sun-Glass"} />
+        <Card img={img2} name={"Sun-Glass"} />
+      </div>
+      <div className="text-center md:text-start md:flex items-center justify-around">
+        <div className="">
+          <p className="text-[50px] text-gray-500">Just Unleash -</p>
+          <p className="text-[50px]">Your Inner Collector</p>
+          <br />
+          <div className="ml-[60px] md:m-0">
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+            <div className="text-center md:text-start flex gap-[20px]">
+              <img src={img9} alt="" />
+              <p>Best Seller All Around World</p>
+            </div>
+          </div>
+          <button
+            onClick={() => modalFun()}
+            className="w-[150px] h-[40px] bg-black border-0 text-white rounded-xl"
+          >
+            Explore more
+          </button>
+        </div>
+        <img className="w-[80%] m-auto md:m-0 md:w-[50%]" src={img8} alt="" />
+      </div>
+      {modal && (
+        <div className="">
+          <div className="">
+            <img className="w-[60%] m-auto" src={img10} alt="" />
+          </div>
+          <div className="text-center mt-[50px]">
+            <p className="text-[40px]">Frequently Asked</p>
+            <p className="text-[40px] text-gray-500">Questions</p>
+          </div>
+          <div className="w-[85%] flex m-auto justify-between border-b-1 h-[40px] border-gray-700 mt-[30px]">
+            <p className="text-[20px]">What is an NFT?</p>
+            <button className="w-[30px] h-[30px] rounded-[15px] bg-black text-white">
+              +
+            </button>
+          </div>
+          <div className="w-[85%] flex m-auto justify-between border-b-1 h-[40px] border-gray-700 mt-[30px]">
+            <p className="text-[20px]">What can I use NFTs for?</p>
+            <button className="w-[30px] h-[30px] rounded-[15px] bg-black text-white">
+              +
+            </button>
+          </div>
+          <div className="w-[85%] flex m-auto justify-between border-b-1 h-[40px] border-gray-700 mt-[30px]">
+            <p className="text-[20px]">
+              What is the difference between an NFT and cryptocurrency?
+            </p>
+            <button className="w-[30px] h-[30px] rounded-[15px] bg-black text-white">
+              +
+            </button>
+          </div>
+          <div className="w-[85%] flex m-auto justify-between border-b-1 h-[40px] border-gray-700 mt-[30px]">
+            <p className="text-[20px]">How much is an NFT worth?</p>
+            <button className="w-[30px] h-[30px] rounded-[15px] bg-black text-white">
+              +
+            </button>
+          </div>
+          <div className="w-[85%] flex m-auto justify-between border-b-1 h-[40px] border-gray-700 mt-[30px]">
+            <p className="text-[20px]">
+              How do I purchase an NFT on your platform ?
+            </p>
+            <button className="w-[30px] h-[30px] rounded-[15px] bg-black text-white">
+              +
+            </button>
+          </div>
+          <div className="w-[80%] m-auto text-white border-0 rounded-4xl h-[300px] bg-black mt-[100px]">
+            <div className="flex items-center justify-around">
+              <div className="">
+                <p className="text-[40px]">Create and Sell NFTs</p>
+                <p className="text-gray-500">World’s Largest NFT Place</p>
+                <br />
+                <button onClick={()=>closeModal()} className="w-[150px] h-[40px] bg-white border-0 text-black rounded-xl">
+                  Explore More
+                </button>
+                <button className="w-[150px] h-[40px] bg-black border-1  rounded-xl">
+                  Sell Artwork
+                </button>
+              </div>
+              <img src={img11} alt="" />
+            </div>
+          </div>
+        </div>
+      )}
     </>
   );
 };
