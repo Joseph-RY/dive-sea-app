@@ -23,6 +23,7 @@ createRoot(document.getElementById("root")).render(
           <Route path="sell" element={<Sell />} />
           <Route path="stats" element={<Stats />} />
           <Route path="info/:id" element={<Info />} />
+          <Route path="user" element={<User />} />
           <Route path="user/:id" element={<User />} />
         </Route>
       </Routes>
